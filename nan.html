@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN</title>
+</head>
+<body>
+    <h1>Belajar NaN / Not a Number</h1>
+    <!-- NaN berlaku setelah melakukan konversi data -->
+    <h1 id="nan"></h1>
+    <h1 id="nan2"></h1>
+    <h1 id="nan3"></h1>
+
+
+    <!-- isNaN -> Berfugsi untuk melakaukan pengecekan terhadap data yang sudah dikonversi bersifat NaN atau bukan. Hasilnya berupa data Boolean (true/false) 
+    Hasilnya berupa true jika NaN, false jika bukan-->
+    <h1>Belajar isNaN</h1>
+    <h1 id="isnan"></h1>
+    <h1 id="isnan2"></h1>
+
+    <script>
+        //NaN
+        let a = Number("ppppp");
+        let b = Number("40");
+        let c = Number("20.1pppp");
+
+        document.getElementById("nan").innerHTML=a;
+        document.getElementById("nan2").innerHTML=b;
+        document.getElementById("nan3").innerHTML=c;
+
+
+        //isNaN
+        //datanya harsu dikonversi dlu
+        let e = Number("ppppp"); //true
+        let f = Number("30"); //false
+
+        document.getElementById("isnan").innerHTML=isNaN(e);
+        document.getElementById("isnan2").innerHTML=isNaN(f);
+    </script>
+</body>
+</html>

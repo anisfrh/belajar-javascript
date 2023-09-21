@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Perbandingan</title>
+</head>
+<body>
+    <h1>Operator Perbandingan pd Js</h1>
+    <h2 id="banding"></h2>
+    <!-- 
+        !=
+        ==
+        ===
+        <
+        >
+        <=
+        >=
+        ?
+     -->
+
+     <script>
+        // //==      ,boleh beda tipe data asal masih satu nilai -gampangnya kalo msh ada yg sama antar tipe data atau nilai masih dianngap benar-
+        // let a = "20"; //meskipun tipe datanya beda, asal nilainya sama kembali ke kondisi pertama -true-
+
+        // if (a == 20){
+        //     // masukkan action dalam if
+        //     console.log ("Nilainya sama")
+        // }else{
+        //     console.log ("Nilainya tidak sama")
+        // }
+
+
+        // //!=
+        // let b = 20;
+
+        // if (a != 20){console.log ("Nilainya sama")
+        // }else{
+        //     console.log ("Nilainya tidak sama")
+        // } //hasilnya nilai tidak sama, karna ! untk menentang meskipun nilainya sama
+
+
+        // //===       ,harus sama tipe data dan nilainya
+            // let a = "15";
+            // let b;
+
+            // if (a === 15) {
+            //     b = "sama"
+            // }else{
+            //     b = "beda"
+            // }
+
+            // document.getElementById("banding").innerHTML = b;
+
+            // let a = 15;
+            // let b = 20;
+            // let c;
+
+            // if (a === b) {
+            //     c = "sama"
+            // }else{
+            //     c = "beda"
+            // }
+
+            // document.getElementById("banding").innerHTML = c;
+
+
+
+         // //< dan >
+            // let a = 15;
+            // let b = 20;
+            // let c;
+
+            // if (a < b){
+            //     c = "betul"
+            // }else{
+            //     c = "salah woii"
+            // }
+
+
+            // document.getElementById("banding").innerHTML = c;
+
+
+          // //<= dan >=
+            let a = 15;
+            let b = 20;
+            let c;
+
+            if (a <= b){
+                c = "betul"
+            }else{
+                c = "salah woii"
+            }
+
+
+            document.getElementById("banding").innerHTML = c;
+
+
+            // let a = 15;
+            // let b = 20;
+
+            // if (a <= b){
+            //     document.getElementById("banding").innerHTML = "betul";
+            // }else{
+            //     document.getElementById("banding").innerHTML = "salah";
+            // }
+
+     </script>
+</body>
+</html>

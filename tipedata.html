@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar TipeData</title>
+</head>
+<body>
+    <h1>TipeData Javascript</h1>
+    <!-- TipeData ada 4;
+    String = Teks,
+    String = Nomor
+    Boolean = True/False
+    Array = Banyak Data -->
+    <h2 id="number"></h2>
+    <h2 id="string"></h2>
+    <h2 id="boolean"></h2>
+    <h2 id="array"></h2>
+
+    <script>
+        // tipeData Number, tidak boleh didahului oleh bilangan Oktal 0
+        var dataNumber = 20;
+
+        console.log(dataNumber);
+        document.getElementById("number").innerHTML = dataNumber;
+
+        // tipeData String
+        // ada escape character 
+            // \' -> '
+            // \"" -> ""
+            // \n -> line baru atau enter
+            // \t -> tab
+            // \b -> simbol kotak
+            // \u00AE -> buletan R
+        // var dataString = "\"Bangkit\" adalah bagian dari kemrdekaan";
+        // var dataString = "Mahasiswi \t Programmer"
+        // var dataString = "Mahasiswi \u00AE Programmer"
+        // var dataString = "Mahasiswi \b Programmer"
+        // var dataString = "Mahasiswi \a9 Programmer"
+        var dataString = "Mahasiswi \n Programmer "
+
+        // console.log(dataString);
+        // document.getElementById("string").innerHTML = dataString;
+
+        // console.log(dataString.length); //untuk menghitung karatakter
+        // document.getElementById("string").innerHTML = dataString.length;
+
+        // console.log(dataString.toUpperCase()); //untuk besarin semua huruf
+        // document.getElementById("string").innerHTML = dataString.toUpperCase();
+
+        // console.log(dataString.toLowerCase()); //untuk kecilin semua huruf
+        // document.getElementById("string").innerHTML = dataString.toLowerCase();
+
+        // console.log(dataString.toString()); 
+        // document.getElementById("string").innerHTML = dataString.toString();
+
+        // console.log(dataString.toLocaleUpperCase());
+        // document.getElementById("string").innerHTML = dataString.toLocaleUpperCase();
+
+        // console.log(dataString.repeat(7)); //untuk  ngulang atau ngebanyakin
+        // document.getElementById("string").innerHTML = dataString.repeat(7);
+
+        // console.log(dataString.replace("m","l"));
+        // document.getElementById("string").innerHTML = dataString.replace("m","l");
+
+        // console.log(dataString.slice(6)); //untuk motong huruf
+        // document.getElementById("string").innerHTML = dataString.slice(6);
+
+
+        // tipeData Boolean
+        // var boolean = true;
+
+        // console.log(dataBoolean);
+        // document.getElementById("boolean").innerHTML = dataBoolean;
+
+        // tipeData Array -> bisa menyimpan banyak data apapun tipenya, disimbolkan dg []
+        var dataArray = ["icha", 17, true, 21.3];
+
+        console.log(dataArray);
+        document.getElementById("array").innerHTML = dataArray;
+    </script>
+</body>
+</html>
+
+<!-- penulisan variabel usahakan camelCase -->

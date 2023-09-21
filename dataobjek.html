@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Objek</title>
+</head>
+
+<style>
+    .coba{
+        background-color: palevioletred;
+    }
+</style>
+
+<body>
+    <h1>Jenis Susu</h1>
+
+    <table border="1">
+        <tr class="coba">
+            <th>Merk</th> <!--Table Head; buat judul pada table-->
+            <th>Varian</th>
+            <th>Harga</th>
+            <th>Deskripsi</th>
+            <th>Ukuran</th>
+        </tr>
+        <tr>
+            <td> <span id="merk"></span></td> <!--span-->
+            <td> <span id="varian"></span></td>
+            <td> <span id="harga"></span></td>
+            <td> <span id="deskripsi"></span></td>
+            <td> <span id="ukuran"></span></td>
+        </tr>
+    </table>
+
+    <script>
+        susu ={
+            merk: "Frisianflag", //merk sebagai property dan frisianflag sebagai value/nilai
+            varian: "Coklat",
+            harga: "6700",
+            deskripsi: function() {
+                return this.merk + "rasa yang enak" + this.varian
+            },
+            ukuran: "700ml"
+        }
+
+        document.getElementById("merk").innerHTML=susu.merk;
+        document.getElementById("varian").innerHTML=susu.varian;
+        document.getElementById("harga").innerHTML=susu.harga;
+        document.getElementById("deskripsi").innerHTML=susu.deskripsi();
+        document.getElementById("ukuran").innerHTML=susu.ukuran;
+    </script>
+</body>
+</html>

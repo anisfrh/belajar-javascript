@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+
+<style>
+    #text {
+        color: cadetblue;
+    }
+</style>
+
+<body>
+    <h1>Belajar String Template</h1>
+    <br>
+    <h2 id="text"></h2>
+
+    <script>
+        let nama = "Nana";
+        let asal = "Koreyeah";
+        let nilai = 80;
+
+        // // ${namavariabel};  -> fungsinya untuk manggil variabel
+        // document.getElementById("text").innerHTML = `Nama aing ${nama}`;  //cara 1 dg string template, biar cleancode
+        // document.getElementById("text").innerHTML = "Nama aing " + nama;  //cara 2
+
+       // document.getElementById("text").innerHTML = `Nama saya ${nama} Lulus : ${nilai > 75}`;
+        document.getElementById("text").innerHTML = `Nama saya ${nama} Lulus : ${nilai == 80 && asal == "Koreyeah"}`;
+
+
+
+        //Multiline String
+        let a = `Haloooo
+        Namakuu
+        Solosss`;
+        document.writeln("<pre>");    //"<pre>" untuk enter
+        document.writeln(a);
+        document.writeln("<pre>");
+
+    </script>
+</body>
+</html>

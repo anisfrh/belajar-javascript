@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+<body>
+    <h1>belajar Undefined</h1>
+    <br>
+    <h1 id="undia"></h1>
+
+    <script>
+        // //Undefined itu variabelnya ada tapi isinya atau valuenya gaada
+        // let a;
+        // document.getElementById("undia").innerHTML=a;
+
+
+        // //adapun Null itu variabelnya ada, isinya ada tapi isinya atau outputnya kosong
+        // let b = null;
+        // document.getElementById("undia").innerHTML=b;
+
+
+        // //Undefined Variabel
+        // let umur;
+        // let data = umur;
+
+        // if(umur === undefined){
+        //     data = "Bener Undefined";
+        // }else{
+        //     data = "Bukan Undifined";
+        // }
+
+        // document.getElementById("undia").innerHTML=data;
+
+
+        // //Undefined Array Value
+        // const bias = ["Nana", "DO", "JK"];
+        //     let data = bias;
+
+        // if (bias[0] === undefined) {
+        //     data = "Biasnya ganemu";
+        // }else{
+        //     data = "biasnya ada";
+        // }
+
+        // document.getElementById("undia").innerHTML=data;      
+        
+        
+        //Undefined Data Objek Property
+        const mhs = {};
+        let data = mhs;
+
+        if(mhs.nama === undefined) {
+            data = "data objek tdk ada"
+        }else{
+            data = "data objek ketemu"
+        }
+
+        document.getElementById("undia").innerHTML=data; 
+    </script>
+</body>
+</html>

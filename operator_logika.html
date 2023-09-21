@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <h1>Operator Logika</h1>
+    <h2 id="logika"></h2>
+
+    <!-- Operator Logika ada 3 : && -and-, || -or-, ! -negasi- -->
+    <script>
+        let nama = "Ichaa";
+        let email = "solos@gmail.com";
+        let password = "123";
+        let hasil;
+
+        // if(email == "solos@gmail.com" && password == "123"){
+        //     hasil = "selamat datangg " + nama;
+        // }else{
+        //     hasil = "yahh gabisa";
+        // }
+
+       // // ! = negasi,  negasi selalu diletakkan didepan
+        // if(!email == "solos@gmail.com") {
+        //     hasil = "betul"
+        // }else{
+        //     hasil = "salah"
+        // }
+
+        if(!(email ==  /* == atau != */  "soloss@gmail.com")) {
+            hasil = "betul"
+        }else{
+            hasil = "salah"
+        }
+
+        document.getElementById("logika").innerHTML = hasil;
+    </script>
+</body>
+</html>

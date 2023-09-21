@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Objek</title>
+</head>
+<body>
+    <h1>Mie Gacoan</h1>
+
+    <table border="1">
+        <tr class="coba">
+            <th>Nama</th> 
+            <th>Level</th>
+            <th>Harga</th>
+            <th>Deskripsi</th>
+        </tr>
+
+        <tr>
+            <td> <span id="nama"></span></td> 
+            <td> <span id="level"></span></td>
+            <td> <span id="harga"></span></td>
+            <td> <span id="deskripsi"></span></td>
+        </tr>
+    </table>
+
+    <script>
+      const mie ={
+            nama: "Mie Hompimpa",
+            level: "3",
+            harga: "10.000",
+            deskripsi: function() {
+                return this.nama + " tanpa tambahan kecap, pedas nan lezat"
+            }
+        }
+
+        console.table ([mie]); //untuk munculin tabel pake console.table atau pada bagian variabel pake const
+
+        document.getElementById("nama").innerHTML=mie.nama;
+        document.getElementById("level").innerHTML=mie.level;
+        document.getElementById("harga").innerHTML=mie.harga;
+        document.getElementById("deskripsi").innerHTML=mie.deskripsi();
+    </script>
+
+
+    <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Tabel Objek JavaScript</title>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Pekerjaan</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Data akan diisi melalui JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    // Data objek yang akan ditampilkan dalam tabel
+    var data = [
+      { nama: "John", usia: 25, pekerjaan: "Pengembang" },
+      { nama: "Jane", usia: 30, pekerjaan: "Desainer" },
+      { nama: "Doe", usia: 28, pekerjaan: "Manajer Proyek" }
+    ];
+
+    // Mendapatkan referensi ke elemen tbody
+    var tbody = document.getElementById("table-body");
+
+    // Memasukkan data objek ke dalam tabel
+    for (var i = 0; i < data.length; i++) {
+      var row = "<tr>" +
+                "<td>" + data[i].nama + "</td>" +
+                "<td>" + data[i].usia + "</td>" +
+                "<td>" + data[i].pekerjaan + "</td>" +
+                "</tr>";
+      tbody.innerHTML += row;
+    }
+  </script> -->
+</body>
+</html>
+
+</body>
+</html>

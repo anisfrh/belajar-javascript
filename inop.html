@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <h1>In Operator</h1>
+    <h1 id="inop"></h1>
+    <!-- In Operator buat ngecek apakah ada properti atau tidak didalam data objek.
+    Berarti ini operator mainin data objek atau array -->
+    <script>
+        let permen = {
+            nama: "Milkita",
+            rasa: "Stroberi"
+        }
+
+        //rumusnya -> "property" in var
+        document.getElementById("inop").innerHTML = 'nama' in permen;
+
+
+        // //Nyari Undefined atau Null -> tetep kebaca atau true
+        // //karna yg di cek itu cuma property atau index, jadi selagi valuenya diisi meskipu dg null/undefined dia tetep true atau dianggep ada
+        let kota ={
+            depan: "Bo",
+            tengah: null,
+            belakang: "gor"
+        }
+
+        document.getElementById("inop").innerHTML = 'tengah' in kota;
+
+
+        // //pada array
+        // //rumus -> index keberapa in var
+        const bunga = ["mawar", 'melati', "semuanya indah", undefined, null];
+        document.getElementById("inop").innerHTML = 4 in bunga;
+
+        // catatan: pada array nyari index, adapun pd data objek nyari properti
+
+
+        
+    </script>
+</body>
+</html>
